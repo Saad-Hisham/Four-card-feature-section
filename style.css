@@ -1,0 +1,131 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings-container {
+    text-align: center;
+}
+
+.headings-container h1 {
+    font-weight: 200;
+    font-size: 36px;
+    color: #5b5a62;
+}
+
+.headings-container h2 {
+    color: #5b5a62;
+    font-size: 36px;
+    margin-top: -25px;
+}
+
+.headings-container p {
+    color: #b5b4b9;
+    max-width: 503px;
+    font-weight: 400;
+    font-size: 15px;
+    margin: auto;
+}
+
+.blocks-container {
+    display: flex;
+    align-items: center;
+    min-width: 1115px;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.block {
+    background: white;
+    min-width: 350px;
+    min-height: 250px;
+    box-shadow: 1px 10px 44px -8px rgba(216, 226, 236, 1);
+    -webkit-box-shadow: 1px 10px 44px -8px rgba(216, 226, 236, 1);
+    -moz-box-shadow: 1px 10px 44px -8px rgba(216, 226, 236, 1);
+    border-radius: 9px;
+    position: relative;
+}
+
+.upper-bar {
+    width: 100%;
+    height: 5px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.block .upper-bar {
+    background-color: #49d1d1;
+}
+
+.block-contanier .block:nth-of-type(1) .upper-bar {
+    background-color: #ed5457;
+
+}
+
+.block-contanier .block:nth-of-type(2) .upper-bar {
+    background-color: #fbad4b;
+
+}
+
+.block-four .upper-bar {
+    background-color: #559cee;
+}
+
+.block:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.block h3 {
+
+    color: #4c4b59;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.block p {
+    max-width: 298px;
+    font-size: 13px;
+    margin-left: 2.1rem;
+    color: #d7d6db;
+}
+
+.block span {
+    display: flex;
+    justify-content: end;
+    padding-right: 32px;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1139px) {
+    .blocks-container {
+        flex-direction: column;
+    }
+
+    .block {
+        margin-top: 25px;
+    }
+
+    .headings-container h1,
+    .headings-container h2 {
+        font-size: 28px;
+
+    }
+
+    .headings-container p {
+        max-width: 300px;
+
+    }
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
